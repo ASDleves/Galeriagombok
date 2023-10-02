@@ -23,17 +23,21 @@ class NagyKepView{
         const esemenyem = new CustomEvent(esemenynev)
         window.dispatchEvent(esemenyem)
     }
-    #htmlOsszeRak(){
-        let txt=""
-        txt+=`<div class="card">
-        <button id='bal'>bal</button>
-        <div class="card-body"><img id="nagykephelye" src="${this.#kep}" class="img-thumbnail" alt="virag">
-        </div>
-        <button ID='jobb'>jobb</button>
-      </div>
-      `
-      this.szuloElem.html(txt)
-    }
-}
 
+    #htmlOsszeRak() {
+        let txt = `
+          <div class="button-container">
+            <button id='bal'> LEFT </button>
+          </div>
+          <div class="card">
+            <div class="card-body"><img id="nagykephelye" src="${this.#kep}" class="img-thumbnail" alt="virag"></div>
+          </div>
+          <div class="button-container">
+            <button id='jobb'> RIGHT </button>
+          </div>
+        `;
+      
+        this.szuloElem.html(txt);
+      }
+}
 export default NagyKepView 

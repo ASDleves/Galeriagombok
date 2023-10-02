@@ -1,31 +1,24 @@
-*{
-    margin: 0;
-}
 body{
-
+    text-align: center;
 }
-main{
-    text-align: justify;
-    margin: auto;
-    width: 80%;
-    max-width: 800px;
+.kiskepek {
+    display: flex; /* Use Flexbox */
+    justify-content: flex-start; /* Start from the left */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next row when necessary */
+}
+
+.kiskep {
+    flex: 1; /* Distribute the available space equally among the images */
+    max-width: calc(25% - 20px); /* Set the maximum width for each image */
+    margin: 10px; /* Add margin to create space between images */
+}
+.Nagykep img{
+    width: 500px;
+}
+.Nagykep{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "h h h"
-                         "n n n"
-                         "a a a"
-                         "f f f";
+    grid-template-columns: 20% 60% 20%;
+    
+}
 
-}
-header{
-grid-area: h;
-}
-nav{
-    grid-area: n;
-}
-article{
-    grid-area: a;
-}
-footer{
-    grid-area: f;
-}
