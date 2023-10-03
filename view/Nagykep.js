@@ -23,7 +23,9 @@ class NagyKepView{
         const esemenyem = new CustomEvent(esemenynev)
         window.dispatchEvent(esemenyem)
     }
-
+    updatePictureName(name) {
+        $("#picture-name").text(name);
+    }
     #htmlOsszeRak() {
         let txt = `
           <div class="button-container">
@@ -35,6 +37,7 @@ class NagyKepView{
           <div class="button-container">
             <button id='jobb'> RIGHT </button>
           </div>
+          <div id="picture-name"></div>
         `;
       
         this.szuloElem.html(txt);

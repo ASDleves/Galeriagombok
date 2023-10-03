@@ -2,16 +2,16 @@ body{
     text-align: center;
 }
 .kiskepek {
-    display: flex; /* Use Flexbox */
-    justify-content: flex-start; /* Start from the left */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Allow items to wrap to the next row when necessary */
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-wrap: wrap; 
 }
 
 .kiskep {
-    flex: 1; /* Distribute the available space equally among the images */
-    max-width: calc(25% - 20px); /* Set the maximum width for each image */
-    margin: 10px; /* Add margin to create space between images */
+    flex: 1; 
+    max-width: calc(25% - 20px); 
+    margin: 10px; 
 }
 .Nagykep img{
     width: 500px;
@@ -21,4 +21,7 @@ body{
     grid-template-columns: 20% 60% 20%;
     
 }
-
+#pictures-name{
+    text-align: center;
+    margin: auto;
+}
